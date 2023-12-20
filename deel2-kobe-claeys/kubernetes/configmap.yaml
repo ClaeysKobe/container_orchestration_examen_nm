@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: exam-kobeclaeys
+data:
+  NAME: "kobeclaeys"
+  DATE: "20/12/2023"
