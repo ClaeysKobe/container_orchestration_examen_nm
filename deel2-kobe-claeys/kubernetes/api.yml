@@ -40,16 +40,18 @@ spec:
                 configMapKeyRef:
                   name: backend-config
                   key: DATE
-          command: [ "/bin/sh", "-c", "ls /etc/config/" ]
+          # command: [ "/bin/sh", "-c", "ls /etc/config/" ]
           volumeMounts:
           - name: config-volume
-            mountPath: /etc/config
+            mountPath: /mnt/src/config
+            # subPath: config.json
       volumes:
       - name: config-volume
         configMap:
           # Provide the name of the ConfigMap containing the files you want
           # to add to the container
           name: api-config
+          defaultMode: 0444  # Read permission for everyone
 
 ---
 apiVersion: v1
