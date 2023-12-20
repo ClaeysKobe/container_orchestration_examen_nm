@@ -1,0 +1,44 @@
+# Ignore Docker image files
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.lz4
+*.tar.sz
+*.tar.zst
+
+# Ignore Docker container logs
+*.log
+
+# Ignore Docker build artifacts
+Dockerfile.*
+.dockerignore
+
+# Ignore Docker Compose files
+docker-compose.yml
+docker-compose.yaml
+
+# Ignore Docker swarm files
+*.swarm.yml
+*.swarm.yaml
+
+# Ignore Docker stack files
+*.stack.yml
+*.stack.yaml
+
+# Ignore Docker network files
+*.network.yml
+*.network.yaml
+
+# Ignore Docker volume files
+*.volume.yml
+*.volume.yaml
+
+# Ignore Docker secret files
+*.secret.yml
+*.secret.yaml
+
+# Ignore Docker configuration files
+*.conf
+*.env
+*.env.*
